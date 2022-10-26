@@ -29,12 +29,12 @@ function invia(){
 
    for (let i = 0; i < listaMail.length; i++){
     if ( valueMail == listaMail [i] ){
-        valoreTrovato = true 
+        valoreTrovato = true;
         
         
     }
     else if ( valueMail != listaMail [i] ) {
-            
+         
     } 
          
     
@@ -42,15 +42,13 @@ function invia(){
 
  console.log(valoreTrovato);
 
- if ( valoreTrovato = true ){
-    mailYes.innerHTML += `presente`;
+ if ( valoreTrovato == true ){
+    document.getElementById('mail').innerHTML = ` presente`;
  }
  else{
-    mailNot.innerHTML += `non presente`;
+   document.getElementById('mail').innerHTML = `non presente`;
+   
  }
-
- 
-
 
 }
 
